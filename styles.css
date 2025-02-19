@@ -1,0 +1,147 @@
+/* 🏴‍☠️ Import Pirate Font */
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+
+body {
+    font-family: 'Pirata One', cursive;
+    background: url('bg.jpg') no-repeat center center fixed; /* Use uploaded image */
+    background-size: cover;
+    color: #ffcc00;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* 🏴‍☠️ Dark Overlay for Readability */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    z-index: -1;
+}
+
+/* 🏴‍☠️ Pirate Treasure Hunt Header with GIF */
+.pirate-header {
+    position: relative;
+    background: url('Flag Pirate GIF.gif') no-repeat center center;
+    background-size: cover;
+    padding: 50px;
+    border-bottom: 5px solid #e74c3c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 🏴‍☠️ Overlay for Header Readability */
+.pirate-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+}
+
+/* 🏴‍☠️ Header Text */
+.pirate-header h1, .pirate-header p {
+    position: relative;
+    z-index: 2;
+    color: #ffcc00;
+    text-shadow: 3px 3px 8px black;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+/* 🏴‍☠️ Leaderboard Sections */
+.leaderboard-section {
+    margin: 20px auto;
+    width: 90%;
+    padding: 20px;
+    border: 3px solid #f39c12;
+    background: rgba(0, 0, 0, 0.85); /* Dark semi-transparent */
+    border-radius: 15px;
+    position: relative;
+}
+
+.leaderboard-section h2 {
+    font-size: 2rem;
+    color: #f39c12;
+    text-shadow: 2px 2px 5px black;
+}
+
+/* 🏆 Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 1.2rem;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+th {
+    background: #e74c3c;
+    color: white;
+    padding: 10px;
+    border-bottom: 2px solid black;
+}
+
+td {
+    color: white;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+/* 🏴‍☠️ Footer */
+footer {
+    background: #000;
+    color: #ffcc00;
+    padding: 15px;
+    font-size: 1rem;
+    margin-top: 20px;
+    text-align: center;
+    border-top: 3px solid #e74c3c;
+}
+
+/* ⚓ Responsive Design */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .pirate-header {
+        padding: 30px;
+    }
+
+    .leaderboard-section {
+        width: 95%;
+        padding: 15px;
+    }
+
+    table {
+        font-size: 1rem;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}
