@@ -119,7 +119,7 @@ footer {
 }
 
 /* ⚓ Responsive Design */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
     h1 {
         font-size: 2.5rem;
     }
@@ -129,11 +129,11 @@ footer {
     }
 
     .pirate-header {
-        padding: 30px;
+        padding: 25px;
     }
 
     .leaderboard-section {
-        width: 95%;
+        width: 90%;
         padding: 15px;
     }
 
